@@ -56,7 +56,7 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: "./app/asset", to: "dist/asset" },
+        { from: "./app/asset", to: "asset" },
       ],
     }),
   ],
