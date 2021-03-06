@@ -2,11 +2,12 @@ const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 const env = process.env.NODE_ENV;
 
 module.exports = {
-  entry: './app/index.js',
+  entry: './app/js/index.js',
 
   mode: env,
 
@@ -52,6 +53,13 @@ module.exports = {
       // both options are optional
       filename: "[name].css",
       chunkFilename: "[id].css"
-    })
-  ]
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: "./app/asset", to: "dist/asset" },
+      ],
+    }),
+  ],
 };
+  
+
