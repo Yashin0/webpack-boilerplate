@@ -2,7 +2,7 @@
 
 ## Instructions
 
-- Clone repo - `git clone https://github.com/jpggvilaca/webpack-boilerplate.git`
+- Clone repo - orginal `git clone https://github.com/jpggvilaca/webpack-boilerplate.git` my edit `https://github.com/Yashin0/webpack-boilerplate.git`
 - Change to the cloned repo's folder - `cd webpack-boilerplate`
 - Install dependencies - `npm install`
 - Start the server - `npm start`
